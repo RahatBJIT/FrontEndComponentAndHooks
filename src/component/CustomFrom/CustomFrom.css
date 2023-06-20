@@ -1,0 +1,19 @@
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+}
+.inputField{
+    width: 70%;
+}
+
+.inputLable{
+    font-size: large;
+    width: 20%;
+    font-weight: bold;
+}
+
+.fromBody{
+    background-color: rgba(122, 238, 238, 0.575);
+    padding: 20px;
+    border-radius: 10px;
+}

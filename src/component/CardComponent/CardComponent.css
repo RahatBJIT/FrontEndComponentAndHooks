@@ -1,0 +1,18 @@
+.cardContainer {
+    /* background-color: rgba(19, 65, 58, 0.192); */
+
+    background-image: linear-gradient(to bottom left, rgba(68, 173, 77, 0.192), rgba(63, 30, 211, 0.562));
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.colorContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.colorBox {
+    padding: 0px 5px;
+    border: 2px solid;
+    border-radius: 5px;
+}
