@@ -31,11 +31,11 @@ const CardComponent = ({ data }) => {
 
           {
             picture ?
-             <Card.Img variant="top" src={picture} height={100} alt={emptyMessage} /> :
-             <div style={{height: 100}} >{emptyMessage}</div>
-  
-
-}
+              <Card.Img variant="top" src={picture} height={100} alt={emptyMessage} /> :
+              <div>
+                <div style={{ height: 100 , padding:3, justifyContent: 'center', alignItems: 'center'}} >{emptyMessage}</div>
+              </div>
+          }
 
           <Card.Body>
             <Card.Title>{type} model : {data.model}</Card.Title>
