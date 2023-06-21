@@ -1,15 +1,14 @@
 import React from 'react'
-import CardComponent from '../CardComponent/CardComponent';
 import './CardList.css'
 
-const CardList = ({ data }) => {
+const CardList = ({ data , card: CardComponent}) => {
+
     return (
         <div className='cardListContainer'>
-            {data.map((item) =>
-                <CardComponent key={item.id} data={item} />
+            {data.map((item, index) =>
+                <CardComponent key={index} data={item} />
             )}
         </div>
     )
 }
-
 export default CardList

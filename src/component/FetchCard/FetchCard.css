@@ -1,0 +1,25 @@
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  
+
+
+    background-image: linear-gradient(to right, rgba(105, 53, 18, 0.329) , rgba(219, 219, 22, 0.575));
+    padding: 1.5rem;
+    box-shadow: 0 -0.5rem 1rem rgba(0 0 0 / 0.15);
+    border-radius: 4px;
+    margin: 10px;
+    cursor: pointer;
+    min-height: 70px;
+}
+
+
+  
+
+
+.cardinner{
+    display: flex;
+    justify-content: center;
+
+}

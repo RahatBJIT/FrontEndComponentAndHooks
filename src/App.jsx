@@ -1,9 +1,18 @@
 import { useEffect, useState } from 'react';
 import './App.css'
 import CardList from './component/CardList/CardList';
+import AxiosCard from './component/AxiosCard/AxiosCard';
+import axios from 'axios';
+import FetchCard from './component/FetchCard/FetchCard';
 
 function App() {
   const [names, setNames] = useState([]);
+
+  const [url1, setUrl1] = useState('https://restcountries.com/v3.1/all')
+  const [url2, setUrl2] = useState('https://restcountries.com/v3.1/name/')
+
+  const [data1, setData1] = useState([])
+
   useEffect(() => {
     setNames(
       [
@@ -51,10 +60,30 @@ function App() {
 
       ]
     );
-  }, [])
+
+
+
+    axios.get(`${url1}`)
+    .then(Response => setData1(Response.data));
+    
+
+
+  }, []);
+
+
+ 
+  
+
+
   return (
     <>
-      <CardList data={names} />
+
+      <FetchCard  url= {url2}/>
+
+
+      <CardList data={data1} card={AxiosCard}/>
+
+
 
     </>
   )

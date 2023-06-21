@@ -1,0 +1,30 @@
+body {
+  margin-inline: max(0px, ((100% - 260px) / 2));
+  font: 90%/1.4 system-ui;
+}
+
+.cardContainer {
+
+  align-items: center;
+  width: 400px;
+}
+
+.card {
+
+  /* height:300px; */
+  top: 0;
+  background-image: linear-gradient(to right, rgba(105, 53, 18, 0.329) , rgba(219, 219, 22, 0.575));
+  padding: 1.5rem;
+  box-shadow: 0 -0.5rem 1rem rgba(0 0 0 / 0.15);
+  border-radius: 4px;
+  margin: 10px;
+  cursor: pointer;
+  min-height: 170px;
+
+}
+
+.card:hover{
+  background-image: linear-gradient(to right, rgba(172, 83, 24, 0.329) , rgba(141, 141, 29, 0.575));
+
+}
+

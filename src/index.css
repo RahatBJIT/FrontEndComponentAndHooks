@@ -15,6 +15,12 @@
 
 }
 
+body {
+  margin-inline: max(0px, ((100% - 260px) / 2));
+  font: 90%/1.4 system-ui;
+  background-color: #d4c5c56c;
+}
+
 
 a {
   font-weight: 500;
