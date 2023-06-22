@@ -1,4 +1,16 @@
-:root {
+body{
+  margin: 0 ;
+  padding: 0;
+  width: 100%;
+  background-color: #f7f1f186;
+ 
+}
+*{
+  box-sizing: border-box;
+  font-family: cursive, 'Courier New', Courier, monospace;
+}
+
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -74,4 +86,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */

@@ -1,0 +1,103 @@
+.headerBox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    background-color: #110e0e;
+    height: 70px;
+    padding: 0 50px;
+
+}
+
+.checkbtn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    right: 0;
+    position: absolute;
+    margin-right: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+
+.headerBox ul {
+    margin-left: 250px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+
+}
+
+.headerBox ul li {
+    list-style: none;
+    font-weight: bold;
+}
+
+.link {
+    text-decoration: none;
+    color: #eee;
+
+}
+
+.link:hover {
+    color: rgba(23, 240, 255, 0.719);
+}
+
+.logo {
+    min-width: 170px;
+    font-size: 2rem;
+    font-weight: bold;
+    /* color: ; */
+
+}
+
+@media only screen and (max-width: 768px) {
+    .checkbtn {
+        display: block;
+    }
+
+    .headerBox {
+        flex-direction: column;
+        gap: 10px;
+        height: auto;
+        width: 100%;
+
+    }
+
+    .headerBox ul {
+        flex-direction: column;
+        margin-left: 0;
+        width: 100%;
+        display: none;
+
+
+    }
+    #check:checked ~ ul{
+        left: 0;
+        transition: all .5s;
+        display: block;
+    }
+
+ 
+    .headerBox ul  li{
+
+    background-color: rgba(44, 60, 73, 0.096);
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+    }
+
+    .checkbtn {
+        position: absolute;
+        top: 10px;
+    }
+
+}
